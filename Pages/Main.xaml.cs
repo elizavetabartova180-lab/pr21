@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Documents_Bartova.Classes;
 
 namespace Documents_Bartova.Pages
 {
@@ -24,5 +25,18 @@ namespace Documents_Bartova.Pages
         {
             InitializeComponent();
         }
+
+        public void CrearUI()
+        {
+            Parent.Children.Clear();
+            foreach (DocumentContext item in MainWindow.init.AllDocuments)
+                Parent.Children.Add(new Elements.Item(item));
+        }
+
+        private void Exit(object sender, RoutedEventArgs e) =>
+            MainWindow.init.Close();
+
+        private void Add(object sender, RoutedEventArgs e) =>
+            MainWindow.init.frame.Navigate(new Pages.Add());
     }
 }

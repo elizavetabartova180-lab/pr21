@@ -21,7 +21,7 @@ namespace Documents_Bartova.Pages
     /// </summary>
     public partial class Add : Page
     {
-        public Add(DocumentContext document)
+        public Add(DocumentContext document = null)
         {
             InitializeComponent();
         }

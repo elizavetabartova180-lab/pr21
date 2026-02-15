@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Windows;
-using System.Windows.Documents;
 using Documents_Bartova.Classes;
-using Documents_Bartova.Model;
 
 namespace Documents_Bartova
 {
@@ -17,7 +15,10 @@ namespace Documents_Bartova
         public MainWindow()
         {
             InitializeComponent();
+
             init = this;
+
+            frame.Navigate(new Pages.Main());
         }
     }
 }

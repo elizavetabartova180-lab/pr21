@@ -9,6 +9,45 @@
       Title="Main">
 
     <Grid>
-        
+        <Grid
+            Height="50"
+            VerticalAlignment="Top"
+            Background="#FFA0A0A0">
+            <Image 
+                Width="30"
+                Height="30"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Margin="10"
+                Source="/Image/icon.png"/>
+            <Label
+                Foreground="White"
+                Content="Учёт входящих и исходящих документов"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                FontSize="20"
+                FontWeight="Bold"/>
+            <Button 
+                Content="Выйти"
+                Click="Exit"
+                Width="75"
+                Height="25"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Right"
+                Margin="10"
+                Background="White"/>
+        </Grid>
+        <ScrollViewer Margin="10,10,10,55">
+            <StackPanel x:Name="Parent"/>
+        </ScrollViewer>
+        <Button 
+            Content="Добавить"
+            Click="Add"
+            Width="75"
+            Height="25"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Left"
+            Margin="10"
+            Background="White"/>    
     </Grid>
 </Page>
