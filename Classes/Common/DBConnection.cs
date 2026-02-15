@@ -21,6 +21,7 @@ namespace Documents_Bartova.Classes.Common
             OleDbCommand command = new OleDbCommand(sql, connection);
             return command.ExecuteReader();
         }
+
         public static void CloseConnection(OleDbConnection connection) { 
             connection.Close();
         }

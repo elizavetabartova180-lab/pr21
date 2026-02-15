@@ -15,6 +15,6 @@ namespace Documents_Bartova.Model
         public int IdDocument { get; set; }
         public DateTime Date { get; set; }
         public int Status { get; set; }
-        public int Description { get; set; }
+        public int Direction { get; set; }
     }
 }
