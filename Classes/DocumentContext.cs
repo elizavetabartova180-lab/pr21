@@ -18,13 +18,13 @@ namespace Documents_Bartova.Classes
                 allDocuments.Add(new DocumentContext()
                 {
                     Id = dataDocuments.GetInt32(0),
-                    Scr = dataDocuments.GetString(1),
+                    Src = dataDocuments.GetString(1),
                     Name = dataDocuments.GetString(2),
                     User = dataDocuments.GetString(3),
                     IdDocument = dataDocuments.GetInt32(4),
                     Date = dataDocuments.GetDateTime(5),
                     Status = dataDocuments.GetInt32(6),
-                    Direction = dataDocuments.GetInt32(7)
+                    Direction = dataDocuments.GetString(7)
 
                 });
             }
@@ -47,7 +47,7 @@ namespace Documents_Bartova.Classes
                     $"UPDATE" +
                         $"[Документы]" +
                     $"SET" +
-                        $"[Изображение] = '{this.Scr}'," +
+                        $"[Изображение] = '{this.Src}'," +
                         $"[Наименование] = '{this.Name}'," +
                         $"[Ответственный] = '{this.User}'," +
                         $"[Код документа] = '{this.IdDocument}'," +
@@ -69,7 +69,7 @@ namespace Documents_Bartova.Classes
                         $"[Статус]," +
                         $"[Направление])" +
                     $" VALUES (" +
-                    $"'{this.Scr}'," +
+                    $"'{this.Src}'," +
                     $" '{this.Name}'," +
                     $" '{this.User}'," +
                     $" '{this.IdDocument}'," +

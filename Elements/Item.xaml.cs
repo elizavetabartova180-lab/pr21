@@ -26,7 +26,7 @@ namespace Documents_Bartova.Elements
         public Item(DocumentContext documentContext)
         {
             InitializeComponent();
-            img.Source = new BitmapImage(new Uri(documentContext.Scr));
+            img.Source = new BitmapImage(new Uri(documentContext.Src));
             lName.Content = documentContext.Name;
             lUser.Content = "Ответственный: " + documentContext.User;
             lCode.Content = "Код документа: " + documentContext.IdDocument;
